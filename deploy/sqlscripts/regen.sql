@@ -1,0 +1,9 @@
+set serveroutput on
+WHENEVER SQLERROR EXIT 3
+VARIABLE ret NUMBER
+BEGIN
+  :ret := 0; 
+  PKG_TESTDATA_GEN.REGENERATEDATA('&1','&2');
+END;
+/
+EXIT :ret
