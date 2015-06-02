@@ -1,0 +1,3 @@
+TDM - Test Data Management
+
+A set of sql procedures and shell scripts intended to overlay test data into specified relational database schemas. Automated testing requires predictable behavior and data to work properly. TDM is an attempt to address the data portion of this equation.
